@@ -1,0 +1,18 @@
+@if(viewDetails) {
+  <div class="da">
+    <app-card (closeModal)="onCloseModal()"></app-card>
+
+  </div>
+} @else {
+
+  
+  <div class="w-40 bg-gray-200 h-57 grid mx-5 rounded">
+    <img class="rounded-lg w-40 h-57" [src]="'https://image.tmdb.org/t/p/original/' + movie().poster_path" alt="">    
+  </div>
+  <button (click)="openModal()" class=" justify-center h-15 flex mx-5 text-3x1 content-center items-center self-center">
+   <p class="hover">
+     {{ movie().title }}
+   </p>
+  </button>
+  
+} 

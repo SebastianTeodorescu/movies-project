@@ -1,0 +1,11 @@
+<div class="flex">
+  
+  <ul class="w-full flex mx-15 my-5">
+    @for ( movie of movies; track movie.id){
+
+      <li>
+        <app-movie [movie]="movie"></app-movie>
+      </li>
+    }
+  </ul>
+</div>
